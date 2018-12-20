@@ -1,0 +1,13 @@
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\bin\Debug\ScoreTable.exe.config
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\bin\Debug\ScoreTable.exe
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\bin\Debug\ScoreTable.pdb
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\bin\Debug\Newtonsoft.Json.dll
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\bin\Debug\Newtonsoft.Json.xml
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.Form1.resources
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.Properties.Resources.resources
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.csproj.GenerateResource.cache
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.csproj.CoreCompileInputs.cache
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.csproj.CopyComplete
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.exe
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.pdb
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.csprojAssemblyReference.cache

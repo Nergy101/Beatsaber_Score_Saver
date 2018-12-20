@@ -71,7 +71,7 @@ namespace ScoreTable
             /// these 3 .bat files exist already
             try
             {
-                var result = ExecuteCommand(@"..\bashfiles\SortTypeOne.bat"); // iets maken dat input "sorteer type" pakt en dan andere donothing.bat uitvoert
+                var result = ExecuteCommand(@"..\bashfiles\SortTypeThree.bat"); // iets maken dat input "sorteer type" pakt en dan andere donothing.bat uitvoert
                 dataGridView1.DataSource = result;
                 button1.Text = "Loaded";
             }

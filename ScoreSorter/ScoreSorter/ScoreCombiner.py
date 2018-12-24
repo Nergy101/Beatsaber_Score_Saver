@@ -34,6 +34,7 @@ def CombineScores():
     jsonDataOne = yaml.safe_load(jsonDump)
     maxlengthOne = jsonDataOne["_leaderboardsData"].__len__()
 
+    # TODO needs a huge refactor below @ptr
     jsonDump = json.dumps(dataTwo)
     jsonDataTwo = yaml.safe_load(jsonDump)
     maxlengthTwo = jsonDataTwo["_leaderboardsData"].__len__()

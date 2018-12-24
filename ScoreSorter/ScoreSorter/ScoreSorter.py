@@ -10,16 +10,17 @@ localLeaderBoardsDataPath = "D:\LocalLeaderboards.dat"
 #print (sys.argv[1]) # prints var1
 #print (sys.argv[2]) # prints var2
 
+# all sys.argv are strings
 if len(sys.argv) == 1:
     sortType = 2
 if len(sys.argv) == 2:
     sortType = sys.argv[1]
-
 if len(sys.argv) == 3:
     savePath = sys.argv[2]
-
 if len(sys.argv) == 4:
     localLeaderBoardsDataPath = sys.argv[3]
+
+# TODO organize code better @ptr
 
 def sort(type, jsonList):
     if type == 1:

@@ -26,56 +26,39 @@ namespace ScoreTable
         {
         }
 
-        public List<PlayerEntry> ExecuteCommand(string command)
+        private void run_cmd(string sortType)
         {
-            int exitCode;
-            ProcessStartInfo processInfo;
-            Process process;
-
-            processInfo = new ProcessStartInfo("cmd.exe", "/c " + command);
-            processInfo.CreateNoWindow = true;
-            processInfo.UseShellExecute = false;
-            // *** Redirect the output ***
-            processInfo.RedirectStandardError = true;
-            processInfo.RedirectStandardOutput = true;
-
-            process = Process.Start(processInfo);
-            process.WaitForExit();
-
-            // *** Read the streams ***
-            // Warning: This approach can lead to deadlocks, see Edit #2
-            string output = process.StandardOutput.ReadToEnd();
-            string error = process.StandardError.ReadToEnd();
-
-            exitCode = process.ExitCode;
-
-            Console.WriteLine("output>>" + (String.IsNullOrEmpty(output) ? "(none)" : output));
-            Console.WriteLine("error>>" + (String.IsNullOrEmpty(error) ? "(none)" : error));
-            Console.WriteLine("ExitCode: " + exitCode.ToString(), "ExecuteCommand");
-            process.Close();
-            return GetResult(output);
+            ProcessStartInfo start = new ProcessStartInfo("cmd.exe", "/c " + "C:\\Python36-64\\python.exe ..\\..\\..\\ScoreSorter\\ScoreSorter\\ScoreSorter.py " + sortType);
+            //cmd is full path to python.exe
+            //start.Arguments = args;//args is path to .py file and any cmd line args
+            start.CreateNoWindow = true;
+            start.UseShellExecute = false;
+            start.RedirectStandardOutput = true;
+            using (Process process = Process.Start(start))
+            {
+                using (StreamReader reader = process.StandardOutput)
+                {
+                    string result = reader.ReadToEnd();
+                    var a = (result);
+                }
+            }
         }
 
-        public List<PlayerEntry> GetResult(string batchresult)
-        {
-            var input = File.ReadAllText("D:\\sorted_scores.json");
-            var result = JsonConvert.DeserializeObject<List<PlayerEntry>>(input);
-            return result;
-        }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void load()
         {
-            /// SortTypeOne
-            /// SortTypeTwo
-            /// SortTypeThree
-            /// these 3 .bat files exist already
+            string inputSortType = sortTypeBox.Text;
             try
             {
-                var result = ExecuteCommand(@"..\bashfiles\SortTypeThree.bat"); // iets maken dat input "sorteer type" pakt en dan andere donothing.bat uitvoert
+                run_cmd(inputSortType);
+                var input = File.ReadAllText("D:\\sorted_scores.json");
+                var result = JsonConvert.DeserializeObject<List<PlayerEntry>>(input);
+
                 dataGridView1.DataSource = result;
-                button1.Text = "Loaded";
+                button1.Text = "Load another";
             }
-            catch(FileNotFoundException)
+            catch (FileNotFoundException)
             {
                 button1.Text = "Failed1";
             }
@@ -83,6 +66,32 @@ namespace ScoreTable
             {
                 button1.Text = "Failed2";
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            load();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            label2.BackColor = Color.Gray;
+            label1.BackColor = Color.Green;
+            sortTypeBox.Text = "1";
+            load();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            label1.BackColor = Color.Gray;
+            label2.BackColor = Color.Green;
+            sortTypeBox.Text = "";
+            load();
         }
     }
 }

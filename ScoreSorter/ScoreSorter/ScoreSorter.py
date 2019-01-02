@@ -60,7 +60,7 @@ def SaveScores():
                 score['_fullCombo'] = str(score['_fullCombo']).upper()
                 jsonList.append(score)
     except IndexError:
-        print("Found "+str(x)+" scores")
+        #print("Found "+str(x)+" scores")
         pass
 
     for score in jsonList:
@@ -70,6 +70,7 @@ def SaveScores():
             score['_leaderboardId'] = str(score['_leaderboardId'])[32:]
 
     sort(sortType, jsonList) # type and the list
+    #sort(2, jsonList)
 
     try:
         with open(savePath, "r+") as f:
@@ -81,8 +82,8 @@ def SaveScores():
         print("An Unknown error occured, make sure you have the rights to write/read from file "+savePath+""
                                                               ", try starting the program as Administrator.")
 
-    print("Scores were saved to "+savePath)
-
+    #print("Scores were saved to "+savePath)
+    print(jsonList)
 
 SaveScores()
 

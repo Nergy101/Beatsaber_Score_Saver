@@ -10,3 +10,5 @@ C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Release\ScoreTable.csproj.
 C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Release\ScoreTable.csproj.CopyComplete
 C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Release\ScoreTable.exe
 C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Release\ScoreTable.pdb
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Release\ScoreTable.csprojAssemblyReference.cache
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\bin\Release\dist\scoresorter.exe

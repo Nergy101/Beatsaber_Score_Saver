@@ -26,9 +26,9 @@ namespace ScoreTable
         {
         }
 
-        private void run_cmd(string sortType)
+        private void run_cmd(string sortType)       // path from within solution: ..\\..\\..\\ScoreSorter\\                 path below is from within Release folder
         {
-            ProcessStartInfo start = new ProcessStartInfo("cmd.exe", "/c " + "C:\\Python36-64\\python.exe ..\\..\\..\\ScoreSorter\\ScoreSorter\\ScoreSorter.py " + sortType);
+            ProcessStartInfo start = new ProcessStartInfo("cmd.exe", "/c " + "dist\\scoresorter.exe " + sortType); //C:\\Python36-64\\python.exe ScoreSorter\\ScoreSorter.py 
             //cmd is full path to python.exe
             //start.Arguments = args;//args is path to .py file and any cmd line args
             start.CreateNoWindow = true;

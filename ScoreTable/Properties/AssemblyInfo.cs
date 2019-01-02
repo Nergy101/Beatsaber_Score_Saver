@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ScoreTable")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("ScoreTable By Nergy and Ptr")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("ScoreTable")]

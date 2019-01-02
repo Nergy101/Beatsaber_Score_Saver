@@ -2,6 +2,8 @@ import json
 import yaml
 import sys
 
+# exe made with pyinstaller --onefile scoresorter.py
+
 # config
 savePath = "D:\sorted_scores.json"
 localLeaderBoardsDataPath = "D:\LocalLeaderboards.dat"

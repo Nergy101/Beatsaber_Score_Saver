@@ -1,6 +1,7 @@
 # Beatsaber_Score_Saver
 
 ## This is a project maintained by Nergy101 and PtRanger
+## Trello board: https://trello.com/b/8TRLBJYr/scoresaver
 
 ### This Project exists of a few parts, mainly:
 

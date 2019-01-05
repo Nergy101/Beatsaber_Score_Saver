@@ -11,4 +11,3 @@ C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.csproj.Co
 C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.exe
 C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.pdb
 C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Debug\ScoreTable.csprojAssemblyReference.cache
-C:\Users\chris\source\repos\ScoreTable\ScoreTable\bin\Debug\dist\scoresorter.exe

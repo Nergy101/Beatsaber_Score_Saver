@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="908616ed-3ef1-4036-9fb2-d1c690e3d43a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScoreTable/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/Form1.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScoreTable/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScoreTable/bin/Release/ScoreTable.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/bin/Release/ScoreTable.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScoreTable/bin/Release/ScoreTable.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/bin/Release/ScoreTable.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.csproj.GenerateResource.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,19 +52,20 @@
         <counts>
           <entry key="project.closed" value="2" />
           <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="213" />
+          <entry key="py" value="344" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="213" />
+          <entry key="Python" value="344" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -78,11 +85,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScoreSorter/ScoreSorter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="52" />
+            <state relative-caret-position="221">
+              <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <marker date="1546431121870" expanded="true" signature="636:1040" ph="..." />
+                <marker date="1546898787641" expanded="true" signature="723:1195" ph="..." />
               </folding>
             </state>
           </provider>
@@ -130,7 +137,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="127" />
     <option name="y" value="3" />
     <option name="width" value="697" />
@@ -142,6 +149,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -158,7 +166,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -307,7 +314,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32786885" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -318,16 +325,14 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ScoreSorter.py" />
-    <entry file="file://$PROJECT_DIR$/../ScoreTable/bin/Release/ScoreSorter/ScoreSorter.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../ScoreTable/bin/Release/ScoreSorter/ScoreSorter.py" />
     <entry file="file://$PROJECT_DIR$/ScoreSorter/ScoreSorter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="52" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="52" />
+        <state relative-caret-position="221">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <marker date="1546431121870" expanded="true" signature="636:1040" ph="..." />
+            <marker date="1546898787641" expanded="true" signature="723:1195" ph="..." />
           </folding>
         </state>
       </provider>

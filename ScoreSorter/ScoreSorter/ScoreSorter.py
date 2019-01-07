@@ -14,26 +14,32 @@ localLeaderBoardsDataPath = "D:\LocalLeaderboards.dat"
 
 # all sys.argv are strings
 if len(sys.argv) == 1:
-    sortType = 2
+    sortType = "none"
 if len(sys.argv) == 2:
     sortType = sys.argv[1]
-if len(sys.argv) == 3:
-    savePath = sys.argv[2]
-if len(sys.argv) == 4:
-    localLeaderBoardsDataPath = sys.argv[3]
 
+if len(sys.argv) == 3:
+    sortType = sys.argv[1]
+    savePath = sys.argv[2]
+
+if len(sys.argv) == 4:
+    sortType = sys.argv[1]
+    savePath = sys.argv[2]
+    localLeaderBoardsDataPath = sys.argv[3]
 # TODO organize code better @ptr
 
 def sort(type, jsonList):
-    if type == 1:
+    if type == "1":
         jsonList.sort(key=lambda row: -row['_score'])
         jsonList.sort(key=lambda row: row["_leaderboardId"])
-    if type == 2:
+    if type == "2":
         jsonList.sort(key=lambda row: -row['_score'])
         jsonList.sort(key=lambda row: row["_playerName"])
-    if type == 3:
+    if type == "3":
         jsonList.sort(key=lambda row: -row['_leaderboardId'])
         jsonList.sort(key=lambda row: row["_playerName"])
+    if type == 'none':
+        print("Choose a sorting type")
 
 
 # main function

@@ -3,7 +3,7 @@
 block_cipher = None
 
 
-a = Analysis(['scoresorter\\scoresorter.py'],
+a = Analysis(['scoresorter.py'],
              pathex=['C:\\Users\\chris\\source\\repos\\ScoreTable\\ScoreSorter'],
              binaries=[],
              datas=[],

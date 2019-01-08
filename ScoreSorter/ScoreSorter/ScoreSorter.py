@@ -12,6 +12,7 @@ localLeaderBoardsDataPath = "D:\LocalLeaderboards.dat"
 #print (sys.argv[1]) # prints var1
 #print (sys.argv[2]) # prints var2
 
+#TODO remove savepath from vars (both python and c#)
 # all sys.argv are strings
 if len(sys.argv) == 1:
     sortType = "none"
@@ -20,13 +21,10 @@ if len(sys.argv) == 2:
 
 if len(sys.argv) == 3:
     sortType = sys.argv[1]
-    savePath = sys.argv[2]
+    localLeaderBoardsDataPath = sys.argv[2]
 
-if len(sys.argv) == 4:
-    sortType = sys.argv[1]
-    savePath = sys.argv[2]
-    localLeaderBoardsDataPath = sys.argv[3]
 # TODO organize code better @ptr
+
 
 def sort(type, jsonList):
     if type == "1":
@@ -77,8 +75,7 @@ def SaveScores():
         if not str(score['_leaderboardId'])[32:] == "":
             score['_leaderboardId'] = str(score['_leaderboardId'])[32:]
 
-    sort(sortType, jsonList) # type and the list
-    #sort(2, jsonList)
+    sort(sortType, jsonList)
 
     try:
         with open(savePath, "r+") as f:
@@ -89,8 +86,6 @@ def SaveScores():
     except Exception:
         print("An Unknown error occured, make sure you have the rights to write/read from file "+savePath+""
                                                               ", try starting the program as Administrator.")
-
-    #print("Scores were saved to "+savePath)
     print(jsonList)
 
 SaveScores()

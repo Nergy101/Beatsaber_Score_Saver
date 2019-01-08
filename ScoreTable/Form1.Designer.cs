@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.sortTypeBox = new System.Windows.Forms.TextBox();
+            this.ErrorBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.LoadPathBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,24 +53,14 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // button1
+            // ErrorBox
             // 
-            this.button1.Location = new System.Drawing.Point(315, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(143, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // sortTypeBox
-            // 
-            this.sortTypeBox.Location = new System.Drawing.Point(543, 38);
-            this.sortTypeBox.Name = "sortTypeBox";
-            this.sortTypeBox.Size = new System.Drawing.Size(100, 20);
-            this.sortTypeBox.TabIndex = 2;
-            this.sortTypeBox.Visible = false;
-            this.sortTypeBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.ErrorBox.Location = new System.Drawing.Point(676, 51);
+            this.ErrorBox.Name = "ErrorBox";
+            this.ErrorBox.Size = new System.Drawing.Size(100, 20);
+            this.ErrorBox.TabIndex = 2;
+            this.ErrorBox.Visible = false;
+            this.ErrorBox.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -91,15 +82,34 @@
             this.label2.Text = "Type 2";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // LoadPathBox
+            // 
+            this.LoadPathBox.Location = new System.Drawing.Point(65, 13);
+            this.LoadPathBox.Name = "LoadPathBox";
+            this.LoadPathBox.Size = new System.Drawing.Size(350, 20);
+            this.LoadPathBox.TabIndex = 5;
+            this.LoadPathBox.Text = "D:\\LocalLeaderboards.dat";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 13);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Load path:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LoadPathBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.sortTypeBox);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ErrorBox);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -112,10 +122,11 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox sortTypeBox;
+        private System.Windows.Forms.TextBox ErrorBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox LoadPathBox;
+        private System.Windows.Forms.Label label3;
     }
 }
 

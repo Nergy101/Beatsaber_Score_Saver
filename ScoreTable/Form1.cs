@@ -26,11 +26,11 @@ namespace ScoreTable
         {
         }
 
-        private void run_cmd(string sortType)       // path from within solution: ..\\..\\..\\ScoreSorter\\                 path below is from within Release folder
+        //TODO remove save path
+
+        private void run_cmd(string sortType, string loadPath)       // path from within solution: ..\\..\\..\\ScoreSorter\\                 path below is from within Release folder
         {
-            ProcessStartInfo start = new ProcessStartInfo("cmd.exe", "/c " + "dist\\scoresorter.exe " + sortType); //C:\\Python36-64\\python.exe ScoreSorter\\ScoreSorter.py 
-            //cmd is full path to python.exe
-            //start.Arguments = args;//args is path to .py file and any cmd line args
+            ProcessStartInfo start = new ProcessStartInfo("cmd.exe", "/c " + "dist\\scoresorter.exe " + sortType + " " + loadPath);
             start.CreateNoWindow = true;
             start.UseShellExecute = false;
             start.RedirectStandardOutput = true;
@@ -48,23 +48,28 @@ namespace ScoreTable
 
         private void load()
         {
-            string inputSortType = sortTypeBox.Text;
+            string inputSortType = ErrorBox.Text;
+            string loadPath = LoadPathBox.Text;
             try
             {
-                run_cmd(inputSortType);
+                run_cmd(inputSortType, loadPath);
                 var input = File.ReadAllText("D:\\sorted_scores.json");
                 var result = JsonConvert.DeserializeObject<List<PlayerEntry>>(input);
 
                 dataGridView1.DataSource = result;
-                button1.Text = "Load another";
             }
             catch (FileNotFoundException)
             {
-                button1.Text = "Failed1";
+                ErrorBox.Visible = true;
+                ErrorBox.Text = "FileNotFoundEx";
+               //"Failed1";
             }
             catch (FileLoadException)
             {
-                button1.Text = "Failed2";
+                // "Failed2";
+
+                ErrorBox.Visible = true;
+                ErrorBox.Text = "FileLoadEx";
             }
         }
 
@@ -82,7 +87,7 @@ namespace ScoreTable
         {
             label2.BackColor = Color.Gray;
             label1.BackColor = Color.Green;
-            sortTypeBox.Text = "1";
+            ErrorBox.Text = "1";
             load();
         }
 
@@ -90,8 +95,13 @@ namespace ScoreTable
         {
             label1.BackColor = Color.Gray;
             label2.BackColor = Color.Green;
-            sortTypeBox.Text = "";
+            ErrorBox.Text = "2";
             load();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

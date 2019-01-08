@@ -38,7 +38,7 @@ def CombineScores():
     jsonDump = json.dumps(dataTwo)
     jsonDataTwo = yaml.safe_load(jsonDump)
     maxlengthTwo = jsonDataTwo["_leaderboardsData"].__len__()
-    print(maxlengthOne, maxlengthTwo)
+    # print(maxlengthOne, maxlengthTwo)
     combinedJsonList = []
     x = 0
     y = 0
@@ -51,7 +51,7 @@ def CombineScores():
                 combinedJsonList.append(score)
 
     except IndexError:
-        print("Found "+str(x)+" scores in "+localLeaderBoardsDataPathOne)
+        #print("Found "+str(x)+" scores in "+localLeaderBoardsDataPathOne)
         try:
             while y <= maxlengthTwo:
                 y += 1
@@ -60,7 +60,7 @@ def CombineScores():
                     score['_fullCombo'] = str(score['_fullCombo']).upper()
                     combinedJsonList.append(score)
         except IndexError:
-            print("Found " + str(y) + " scores in " + localLeaderBoardsDataPathTwo)
+            #print("Found " + str(y) + " scores in " + localLeaderBoardsDataPathTwo)
             pass
 
     for score in combinedJsonList:
@@ -73,10 +73,11 @@ def CombineScores():
         with open(savePath, "r+") as f:
             f.write(str(combinedJsonList))
             f.close()
-            print("Scores were saved to "+savePath)
+            # print("Scores were saved to "+savePath)
     except FileNotFoundError:
         print("The given savePath "+savePath+" does not exist yet")
     except Exception:
         print("An Unknown error occured, make sure you have the rights to write/read from file "+savePath+", try starting the program as Administrator.")
+    print(combinedJsonList)
 
 CombineScores()

@@ -26,7 +26,7 @@ namespace ScoreTable
         {
         }
 
-        //TODO remove save path
+        string jsonstring = "";
 
         private void run_cmd(string sortType, string loadPath)       // path from within solution: ..\\..\\..\\ScoreSorter\\                 path below is from within Release folder
         {
@@ -39,7 +39,7 @@ namespace ScoreTable
                 using (StreamReader reader = process.StandardOutput)
                 {
                     string result = reader.ReadToEnd();
-                    var a = (result);
+                    jsonstring = (result);
                 }
             }
         }
@@ -52,9 +52,9 @@ namespace ScoreTable
             string loadPath = LoadPathBox.Text;
             try
             {
-                run_cmd(inputSortType, loadPath);
-                var input = File.ReadAllText("D:\\sorted_scores.json");
-                var result = JsonConvert.DeserializeObject<List<PlayerEntry>>(input);
+                run_cmd(inputSortType, loadPath); // fills jsonstring
+                //var input = File.ReadAllText("D:\\sorted_scores.json");
+                var result = JsonConvert.DeserializeObject<List<PlayerEntry>>(jsonstring);
 
                 dataGridView1.DataSource = result;
             }
@@ -102,6 +102,23 @@ namespace ScoreTable
         private void label3_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            var Form2 = new Form2();
+            Form2.Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var Form3 = new Form3();
+            Form3.Show();
         }
     }
 }

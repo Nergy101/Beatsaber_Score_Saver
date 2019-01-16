@@ -13,3 +13,4 @@ C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Release\ScoreTable.pdb
 C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Release\ScoreTable.csprojAssemblyReference.cache
 C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Release\ScoreTable.Form2.resources
 C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Release\ScoreTable.Form3.resources
+C:\Users\chris\source\repos\ScoreTable\ScoreTable\obj\Release\ScoreTable.Form4.resources

@@ -88,10 +88,7 @@ namespace ScoreTable
 
         private void label2_Click(object sender, EventArgs e)
         {
-            label1.BackColor = Color.Gray;
-            label2.BackColor = Color.Green;
-            ErrorBox.Text = "2";
-            load();
+
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -114,6 +111,14 @@ namespace ScoreTable
 
         private void button3_Click(object sender, EventArgs e)
         {
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            label1.BackColor = Color.Gray;
+            label2.BackColor = Color.Green;
+            ErrorBox.Text = "2";
+            load();
         }
     }
 }

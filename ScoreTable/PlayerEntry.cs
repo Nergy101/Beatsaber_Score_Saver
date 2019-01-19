@@ -13,6 +13,5 @@ namespace ScoreTable
         public string _fullCombo { get; set; }
         public int _timestamp { get; set; }
         public string _leaderboardId { get; set; }
-        
     }
 }

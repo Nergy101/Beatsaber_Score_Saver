@@ -40,8 +40,6 @@ namespace ScoreTable
             }
         }
 
-
-
         private async Task load()
         {
             string inputSortType = ErrorBox.Text;

@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="908616ed-3ef1-4036-9fb2-d1c690e3d43a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoreTable/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoreTable/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/Form1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoreTable/Form3.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/Form3.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoreTable/ScoreTable.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/ScoreTable.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ScoreTable/Form4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/Form4.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ScoreTable/bin/Release/ScoreTable.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/bin/Release/ScoreTable.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ScoreTable/bin/Release/ScoreTable.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/bin/Release/ScoreTable.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.csproj.GenerateResource.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ScoreTable/obj/Release/ScoreTable.pdb" afterDir="false" />
     </list>
@@ -65,12 +59,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="507" />
+          <entry key="py" value="508" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="507" />
+          <entry key="Python" value="508" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -87,13 +81,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ScoreSorter/ScoreSorter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+            <state relative-caret-position="177">
+              <caret line="87" column="24" lean-forward="true" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
               <folding>
-                <marker date="1546967506108" expanded="true" signature="673:1145" ph="..." />
+                <marker date="1547751822076" expanded="true" signature="673:1145" ph="..." />
               </folding>
             </state>
           </provider>
@@ -111,11 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ScoreSorter/BattleSorter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+            <state relative-caret-position="204">
+              <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -152,13 +146,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/ScoreSorter.py" />
-        <option value="$PROJECT_DIR$/ScoreSorter/ScoreSorter.py" />
         <option value="$PROJECT_DIR$/ScoreSorter/ScoreCombiner.py" />
         <option value="$PROJECT_DIR$/ScoreSorter/BattleSorter.py" />
+        <option value="$PROJECT_DIR$/ScoreSorter/ScoreSorter.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="127" />
     <option name="y" value="3" />
     <option name="width" value="697" />
@@ -342,15 +336,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16443452" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16443452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,12 +367,12 @@
     <entry file="file://$PROJECT_DIR$/scoresorter.spec">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoreSorter/ScoreSorter.py">
+    <entry file="file://$PROJECT_DIR$/ScoreSorter/BattleSorter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="204">
+          <caret line="80" column="22" lean-forward="true" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="22" />
           <folding>
-            <marker date="1546967506108" expanded="true" signature="673:1145" ph="..." />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -393,12 +387,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ScoreSorter/BattleSorter.py">
+    <entry file="file://$PROJECT_DIR$/ScoreSorter/ScoreSorter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
+        <state relative-caret-position="177">
+          <caret line="87" column="24" lean-forward="true" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <marker date="1547751822076" expanded="true" signature="673:1145" ph="..." />
           </folding>
         </state>
       </provider>

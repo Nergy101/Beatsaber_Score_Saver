@@ -12,11 +12,29 @@ namespace ScoreTable
     public partial class Form4 : Form
     {
         public string tekst { get; set; }
-
-
+        
         public Form4()
         {
             InitializeComponent();
+            //dataGridView1.BackgroundColor = Color.Transparent;
+            pictureBox1.ImageLocation = @"C:\Users\chris\Downloads\Beatsaber_background_Clear.png";
+            GoFullscreen(true);
+
+        }
+
+        private void GoFullscreen(bool fullscreen)
+        {
+            if (fullscreen)
+            {
+                this.WindowState = FormWindowState.Maximized;
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+                //this.Bounds = Screen.PrimaryScreen.Bounds;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+                this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Sizable;
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -142,8 +160,8 @@ namespace ScoreTable
                 {   
                    await load();
                 }
-                button1.BackColor = Color.Red;
             }
+            button1.BackColor = Color.Red;
         }
     }
 }
